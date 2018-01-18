@@ -57,7 +57,6 @@ body{
 }
 
 .nav-links{
-  padding: 50px;
   font-size: 20px;
 }
 
@@ -98,8 +97,13 @@ body{
   border-radius: 10px;
 }
 
-.pbox:hover{
+.pbox:hover {
    box-shadow: 1px 1px 10px 5px lightgrey;
+}
+
+.pbox:hover td img{
+   border-radius:50%;
+   box-shadow: 0px 0px 0px 5px yellow;
 }
 
 .portfolio-grid h2{
@@ -147,10 +151,6 @@ body{
   padding-right: 10px;
 }
 
-.pbox td img:hover{
-  border-bottom: solid 2px;
-}
-
 .contact-flexbox{
   height: 100%;
   width: 100%;
@@ -180,23 +180,23 @@ body{
   flex-direction: column;
   justify-content:center;
   font-size:50px;
-  padding-left: 10%;
+  padding-left: 50px;
 }
 
 .card-middle{
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
   font-size:200px;
-
+  
 }
 
 .card-right{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 10%;
+  padding-right: 50px;
 }
 address{
   padding: 5px;
@@ -232,7 +232,14 @@ footer a{
   
   .card-middle{
     display: none;
-    
+  }
+  
+  .card-left{
+    padding:0;
+  }
+  
+  .card-right{
+    padding:0;
   }
   
   #contact h2{
@@ -255,6 +262,15 @@ footer a{
   .card-middle{
     display: flex;
   }
+  
+    .card-left{
+    padding-left:50px;
+  }
+  
+  .card-right{
+    padding-right:50px;
+  }
+  
     #contact h2{
     color:black;
   }
@@ -274,6 +290,14 @@ footer a{
   
   .card-middle{
     display: flex;
+  }
+  
+  .card-left{
+    padding-left:50px;
+  }
+  
+  .card-right{
+    padding-right:50px;
   }
   
   #contact h2{
