@@ -1,0 +1,313 @@
+body{
+  margin:0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  transition:all 0.3s ease;
+}
+
+.main{
+  display:flex;
+  flex-direction: column;
+}
+
+.box{
+  width:100%;
+  min-width: 300px;
+  background-color: #eee;
+}
+
+#top{
+  height:90vh;
+}
+#contact{
+  height:90vh;
+}
+
+.portrait-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portrait-container h1{
+  font-size: 5vmax;
+}
+
+.portrait img{
+  min-height: 100%;
+  min-width:100%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 8px;
+  box-shadow: 0;
+  transition:all 1s ease;
+
+}
+
+.portrait img:hover{
+  box-shadow: 0px 0px 0px 10px black;
+}
+
+.summary{
+  max-width: 50%;
+  font-size: 1.5vmax;
+}
+
+.nav-links{
+  padding: 50px;
+  font-size: 20px;
+}
+
+.nav-links td{
+  padding: 20px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover{
+  text-decoration: underline;
+}
+
+.portfolio-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 50px;
+  padding: 10%;
+  background-color: white;
+
+}
+
+.pbox{
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:400px;
+  width:100%;
+  min-width: 250px;
+  background-color: #eee;
+  box-shadow: 1px 1px 10px 1px lightgrey;
+  border-radius: 10px;
+}
+
+.pbox:hover{
+   box-shadow: 1px 1px 10px 5px lightgrey;
+}
+
+.portfolio-grid h2{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.pbox b{
+  font-size: 20px;;
+}
+
+.pbox blockquote{
+  text-align: center;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.pbox p{
+  max-height: 25%;
+  max-width: 75%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.pbox figure{
+  max-width: 50%;
+  max-height: 50%;
+  text-align: center;
+  font-size:15px;
+}
+
+.pbox figure img{
+  height: 175px;
+  width: 100%;
+  max-height: 175px;
+  max-width: 175px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 8px;
+}
+
+.pbox td{
+  padding-right: 10px;
+}
+
+.pbox td img:hover{
+  border-bottom: solid 2px;
+}
+
+.contact-flexbox{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact h2{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.business-card{
+  height:300px;
+  width:600px;
+  background-color: #141414;
+  box-shadow: 1px 1px 10px 3px lightgrey;
+  color:white;
+  display: flex;
+  font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.card-left{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  font-size:50px;
+  padding-left: 10%;
+}
+
+.card-middle{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:200px;
+
+}
+
+.card-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10%;
+}
+address{
+  padding: 5px;
+}
+address a{
+  text-decoration:none;
+  color: white;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color:white;
+  border-top-style: solid;
+  border-top-color: gainsboro;
+  padding:20px;
+}
+
+footer a{
+  text-decoration: none;
+  color:black;
+}
+
+@media (min-width:1px){
+
+  .business-card{
+    height:100%;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .card-middle{
+    display: none;
+    
+  }
+  
+  #contact h2{
+    color:white;
+  }
+
+}
+
+@media (min-width:665px){
+  .portfolio-grid{
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .business-card{
+    height:300px;
+    width:600px;
+    flex-direction: row;
+  }
+  
+  .card-middle{
+    display: flex;
+  }
+    #contact h2{
+    color:black;
+  }
+
+}
+
+@media (min-width:1080px){
+  .portfolio-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .business-card{
+    height:300px;
+    width:600px;
+    flex-direction: row;
+  }
+  
+  .card-middle{
+    display: flex;
+  }
+  
+  #contact h2{
+    color:black;
+  }
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  .portfolio-grid{
+      grid-template-columns: 1fr;
+  }
+  
+  .business-card{
+    height:100%;
+    width:100%;
+  }
+  
+  #contact h2{
+    color:white;
+  }
+}
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  .portfolio-grid{
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .business-card{
+    height:300px;
+    width:600px;
+  }
+  #contact h2{
+    color:black;
+  }
+}
