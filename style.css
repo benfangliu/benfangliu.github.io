@@ -112,8 +112,8 @@ body{
   text-align: center;
 }
 
-.pbox b{
-  font-size: 20px;;
+.pbox figcaption{
+  font-size: 20px;
 }
 
 .pbox blockquote{
