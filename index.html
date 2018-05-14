@@ -1,129 +1,81 @@
 <!DOCTYPE html>
 <html>
+
    <head>
-      <link rel="stylesheet" href="style.css"/>
       <title>Ben Fang Liu</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113187463-1"></script>
-   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-113187463-1');
-   </script>
+      <style>
+
+         * {
+         box-sizing: border-box; }
+
+         .profile-name {
+         font-family: "Times";
+         height: 550px;
+         width: 100%;
+         min-width: 700px;
+         padding: 6em;
+         display: flex;
+         justify-content: center;
+         align-content: center;
+         align-items: center; }
+         .profile-name h1 {
+         text-align: center;
+         margin: 0px;
+         padding: 20px;
+         color: black;
+         font-size: 100px; }
+
+         .diamond {
+         position: relative;
+         height: 300px;
+         width: 300px;
+         text-align: center;
+         line-height: 300px;
+         font-size: 100px;
+         color: white;
+         animation: float 5s ease-in-out infinite; }
+
+         .diamond:before {
+         position: absolute;
+         z-index: -1;
+         content: '';
+         top: 50%;
+         left: 50%;
+         height: 100%;
+         width: 100%;
+         transform: translate(-50%, -50%) rotateY(45deg) rotateZ(45deg);
+         background: linear-gradient(45deg, #b30000, #b30000, #FF0000, #ff4d4d, #FF0000, #b30000, #b30000);
+         background-size: 400% 400%;
+         animation: gradient 5s linear infinite; }
+
+         @keyframes gradient {
+         from {
+         background-position: 100% 0%; }
+         to {
+         background-position: 0% 100%; } }
+         @keyframes float {
+         50% {
+         transform: translate(0, 20px); } }
+
+      </style>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113187463-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() { dataLayer.push(arguments); }
+         gtag('js', new Date());
+         gtag('config', 'UA-113187463-1');
+      </script>
    </head>
-   <body>
-      <header>
-         <div class="logo">benfangliu</div>
-         <div class="cv"><a href="benjaminfliu.pdf">CV</a></div>
-         <div class="contact"><a href="mailto:contact@benfangliu.com">Contact</a></div>
-      </header>
+
+   <body> 
       <div class="profile-name">
          <h1>Ben</h1>
          <div class="diamond-container">
             <div class="diamond">Fang</div>
          </div>
          <h1>Liu</h1>
-         <p></p>
       </div>
-      <div class="portfolio">
-         <div class="item">
-            <div class="overlay"></div>
-            <div class="overlay-details">
-               <h3>Colors Website</h3>
-               <p>Website for designers to discover new color palettes.</p>
-               <div class="buttons">
-                  <a href="https://github.com/benfangliu/colors-website">
-                  <img src="https://i.imgur.com/5HFpmk4.png" title="" />
-                  </a>
-                  <a href="http://benfangliu.com/colors-website/">
-                  <img src="https://i.imgur.com/fWmb7dc.png" title="Icon made by Yannick from www.flaticon.com " />
-                  </a>
-               </div>
-            </div>
-            <img src="https://i.imgur.com/MfyX2h2.png" title="" alt=""/>
-         </div>
-         <div class="item">
-            <div class="overlay"></div>
-            <div class="overlay-details">
-               <h3>Stacky Block</h3>
-               <p>A block stacking arcade game.</p>
-               <div class="buttons">
-                  <a href="https://github.com/benfangliu/stackyblock">
-                  <img src="https://i.imgur.com/5HFpmk4.png" title="" />
-                  </a>
-                  <a href="https://play.google.com/store/apps/details?id=com.potat0.stackyblock">
-                  <img src="https://i.imgur.com/fWmb7dc.png" title="Icon made by Yannick from www.flaticon.com " />
-                  </a>
-               </div>
-            </div>
-            <img src="https://i.imgur.com/HV9dF4D.png" title="" alt=""/>
-         </div>
-         <div class="item">
-            <div class="overlay"></div>
-            <div class="overlay-details">
-               <h3>Battery Life</h3>
-               <p>Web application that provides a visualization of the user's lifespan.</p>
-               <div class="buttons">
-                  <a href="https://github.com/benfangliu/battery-life">
-                  <img src="https://i.imgur.com/5HFpmk4.png" title="" />
-                  </a>
-                  <a href="https://benfangliu.github.io/battery-life">
-                  <img src="https://i.imgur.com/fWmb7dc.png" title="Icon made by Yannick from www.flaticon.com " />
-                  </a>
-               </div>
-            </div>
-            <img src="https://i.imgur.com/rfS6dW9.png" title="" alt=""/>
-         </div>
-         <div class="item">
-            <div class="overlay"></div>
-            <div class="overlay-details">
-               <h3>Computer Vision Website</h3>
-               <p>A website that overlays a face mesh on detected faces from an uploaded video.</p>
-               <div class="buttons">
-                  <a href="https://github.com/benfangliu/computer-vision-pipeline">
-                  <img src="https://i.imgur.com/5HFpmk4.png" title="" />
-                  </a>
-               </div>
-            </div>
-            <img src="https://i.imgur.com/ZkpfSSq.png" title="" alt=""/>
-         </div>
-         
-         <div class="item">
-            <div class="overlay"></div>
-            <div class="overlay-details">
-               <h3>Virtual Tour</h3>
-               <p>A virtual web tour of the San Jose Buddhist Church.</p>
-               <div class="buttons">
-                  <a href="https://sjbetsuinfall2016.bitbucket.io/">
-                  <img src="https://i.imgur.com/fWmb7dc.png" title="Icon made by Yannick from www.flaticon.com " />
-                  </a>
-               </div>
-         </div>
-        <img src="https://i.imgur.com/ZnR75P0.png" title="" alt=""/>               
-         </div>
-         
-         <div class="item">
-            <div class="overlay"></div>
-            <div class="overlay-details">
-               <div class="buttons">
-                  <a href="https://github.com/benfangliu/benfangliu.github.io">
-                  <img src="https://i.imgur.com/5HFpmk4.png" title="" />
-                  </a>
-               </div>
-            </div>
-            <img src="https://i.imgur.com/rWsHfp9.png" title="" />
-         </div>
-      </div>
-      <footer>
-      <div class="foot">
-      <a href="mailto:contact@benfangliu.com">Email</a>
-      </div>
-      <div class="foot"><a href="tel:510-545-9499">Phone</a>
-      </div>
-      <div class="foot">
-      <a href="https://github.com/benfangliu/">Github</a>
-      </div>
-      </footer>
    </body>
 </html>
